@@ -9,6 +9,7 @@ packages = [{include = "sort_algo"}]
 [tool.poetry.dependencies]
 python = "^3.12"
 pytest = "^8.2.1"
+hypothesis = "^6.102.6"
 
 
 [build-system]

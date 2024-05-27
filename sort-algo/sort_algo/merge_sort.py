@@ -1,4 +1,6 @@
 def merge_sort(l: list[int]) -> list[int]:
+    if l == []:
+        return []
     if len(l) == 1:
         return l[:]
     mid = len(l) // 2
