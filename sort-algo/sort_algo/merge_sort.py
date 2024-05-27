@@ -1,6 +1,13 @@
 def merge_sort(l: list[int]) -> list[int]:
     if len(l) == 1:
         return l[:]
+    mid = len(l) // 2
+    l1 = l[:mid]
+    l2 = l[mid:]
+    l1_sorted = merge_sort(l1)
+    l2_sorted = merge_sort(l2)
+    l_sorted = merge(l1_sorted, l2_sorted)
+    return l_sorted
 
 
 def merge(l1: list[int], l2: list[int]):
@@ -21,3 +28,5 @@ def merge(l1: list[int], l2: list[int]):
         merged += l2[i2:]
     else:
         merged += l1[i1:]
+
+    return merged
