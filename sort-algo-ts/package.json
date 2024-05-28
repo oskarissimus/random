@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-typescript": "^7.24.6",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "compile": "tsc .",
+    "test": "jest"
+  }
+}
